@@ -15,6 +15,11 @@ Thumbs.db
 ehthumbs.db
 Desktop.ini
 
+# Folder vendor
+/vendor
+
+# File env
+*.env
 # Recycle Bin used on file shares
 $RECYCLE.BIN/
 
@@ -68,11 +73,22 @@ php_errors.log
 #-------------------------
 # User Guide Temp Files
 #-------------------------
+=======
+*/config/development
+*/logs/log-*.php
+!*/logs/index.html
+*/cache/*
+!system/cache/*
+!*/cache/index.html
+!*/cache/.htaccess
+
+>>>>>>> fcc5adcd7933bdc6ae99f6234b4c73e837f2cb35
 user_guide_src/build/*
 user_guide_src/cilexer/build/*
 user_guide_src/cilexer/dist/*
 user_guide_src/cilexer/pycilexer.egg-info/*
 
+<<<<<<< HEAD
 #-------------------------
 # Test Files
 #-------------------------
@@ -139,3 +155,10 @@ _modules/*
 ./.env
 /writable/cache/*
 /writable/logs/*
+=======
+#codeigniter 3
+application/logs/*
+!application/logs/index.html
+!application/logs/.htaccess
+/vendor/
+>>>>>>> fcc5adcd7933bdc6ae99f6234b4c73e837f2cb35
