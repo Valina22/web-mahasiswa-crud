@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* HEADER */
+header {
+  padding: 20px;
+  width: 100%;
+  background-color: #ff6b6b;
+  color: white;
+  font-size: 26px;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* SECTION WRAPPER */
+.title,
+.table,
+.form {
+  margin: 20px auto;
+  padding: 20px;
+  width: 90%;
+  max-width: 1000px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* TITLE SECTION */
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title h1 {
+  font-size: 28px;
+  color: #333;
+}
+
+/* BUTTON STYLE */
+.title button,
+.button button {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.title button:hover,
+.button button:hover {
+  background-color: #218838;
+}
+
+/* TABLE STYLE */
+.table table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 18px;
+}
+
+.table th,
+.table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.table th {
+  background-color: #f2f2f2;
+  font-weight: 600;
+}
+
+.table tr:hover {
+  background-color: #f9f9f9;
+}
+
+/* FORM INPUT STYLE */
+.form label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.form input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.form input[type="text"]:focus {
+  border-color: #28a745;
+  outline: none;
+  background-color: #f6fff6;
+}

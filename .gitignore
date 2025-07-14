@@ -1,32 +1,79 @@
-.DS_Store
-
+# CodeIgniter 3 logs & cache
 application/cache/*
 !application/cache/index.html
-
 application/logs/*
 !application/logs/index.html
-
 !application/*/.htaccess
 
+# Composer
+/vendor/
 composer.lock
-tests/mocks/database/ci_test.sqlite
 
+# OS & IDE Junk
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.AppleDouble
+.LSOverride
+._*
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+*.lnk
+*~
+
+# IDEs
+.idea/
+*.iml
+/nbproject/
+/build/
+/dist/
+/nbbuild/
+/nbactions.xml
+/nb-configuration.xml
+
+# Vagrant
+.vagrant/
+Vagrantfile
+
+# Environment Files
+.env
+
+# Logs & Debug
+php_errors.log
+
+# PHPUnit
+phpunit
+/phpunit*.xml
+/tests/tests/
+/tests/results/
+tests/coverage*
+
+# Writable folders (CI4 style, jaga-jaga jika hybrid)
+writable/cache/*
+!writable/cache/index.html
+writable/logs/*
+!writable/logs/index.html
+writable/session/*
+!writable/session/index.html
+writable/uploads/*
+!writable/uploads/index.html
+writable/debugbar/*
+!writable/debugbar/.gitkeep
+
+# CodeIgniter User Guide
 user_guide_src/build/*
 user_guide_src/cilexer/build/*
 user_guide_src/cilexer/dist/*
 user_guide_src/cilexer/pycilexer.egg-info/*
-/vendor/
 
-# IDE Files
-#-------------------------
-/nbproject/
-.idea/*
+# Visual Studio Code
+.vscode/
 
-## Sublime Text cache files
-*.tmlanguage.cache
-*.tmPreferences.cache
-*.stTheme.cache
-*.sublime-workspace
-*.sublime-project
-/tests/tests/
-/tests/results/
+# Misc
+.php-version
+.phpintel
+/api/
